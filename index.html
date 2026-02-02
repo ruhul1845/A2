@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave - Podcast Website</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="nav shadow-2xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-4xl font-bold"><span class="text-white">Tech</span><span
+                            class="wave font-bold">Wave</span></h1>
+                </div>
+
+                <!-- Desktop Menu (Center) -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#about"
+                        class="text-white hover:text-yellow-300 font-medium transition duration-300">About</a>
+                    <a href="#episodes"
+                        class="text-white hover:text-yellow-300 font-medium transition duration-300">Episodes</a>
+                    <a href="#host"
+                        class="text-white hover:text-yellow-300 font-medium transition duration-300">Host</a>
+                </div>
+
+                <!-- Subscribe Button (Desktop) -->
+                <div class="hidden lg:block">
+                    <button class="btn text-white px-6 py-2 rounded-full font-semibold relative overflow-hidden">
+                        Subscribe
+                    </button>
+                </div>
+
+                <!-- Mobile Hamburger (Pure CSS) -->
+                <div class="lg:hidden">
+                    <input type="checkbox" id="menu-toggle" class="hidden">
+                    <label for="menu-toggle" class="cursor-pointer">
+                        <img src="./assets/hamburger-menu.png" alt="Menu" class="w-8 h-8">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (Pure CSS Toggle) -->
+            <div class="menu lg:hidden pb-4">
+                <a href="#about" class="block py-2 text-white hover:text-yellow-300 font-medium">About</a>
+                <a href="#episodes" class="block py-2 text-white hover:text-yellow-300 font-medium">Episodes</a>
+                <a href="#host" class="block py-2 text-white hover:text-yellow-300 font-medium">Host</a>
+                <button class="btn ">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
