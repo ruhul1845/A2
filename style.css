@@ -12,7 +12,7 @@
 
 
 .btn {
-    background: linear-gradient(135deg, #fbbf24 0%, #ec4899 50%, #c026d3 100%);
+    background: linear-gradient(135deg, #f7f139 0%, #fb0ab4 50%, #9100b4 100%);
     transition: all 0.3s ease;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -49,4 +49,82 @@
 
 .btn:active {
     transform: translateY(0px);
+}
+
+.sub {
+    background-color: #1A0B2E;
+    border: 2px solid #24fb6c;
+    color: #24fb6c;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(36, 251, 108, 0.4);
+}
+
+.sub:active {
+    transform: translateY(0px);
+}
+
+.spot {
+    background: linear-gradient(135deg, #f7f139 0%, #fb0ab4 50%, #9100b4 100%);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.spot:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(251, 10, 180, 0.4);
+}
+
+.spot:active {
+    transform: translateY(0px);
+}
+
+/* ===== Banner Background Gradient ===== */
+.ban {
+    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 50%, #1e3a8a 100%);
+}
+
+/* ===== Podcast Circle Animation ===== */
+.circ {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ===== NEW Badge ===== */
+.bad {
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    background: linear-gradient(135deg, #24fb6c 0%, #48ec6b 100%);
+    color: rgb(0, 0, 0);
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
 }
