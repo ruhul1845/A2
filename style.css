@@ -128,3 +128,13 @@
     font-size: 12px;
     box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
 }
+
+/* ===== About Section Stats ===== */
+.st {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.st:hover {
+    transform: translateY(-8px);
+}
