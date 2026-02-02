@@ -4,7 +4,7 @@
 
 
 .wave {
-    background: linear-gradient(90deg, #ff0080 0%, #ff1493 50%, #ff69b4 100%);
+    background: linear-gradient(135deg, #f7e963 0%, #fb09b4 50%, #9100b4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -129,7 +129,7 @@
     box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
 }
 
-/* ===== About Section Stats ===== */
+/* ===== Stat Cards Hover Effect ===== */
 .st {
     transition: all 0.3s ease;
     cursor: pointer;
@@ -137,9 +137,10 @@
 
 .st:hover {
     transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-/*=====Feature Cards Hover Effect=====*/
+/* ===== Feature Cards Hover Effect ===== */
 .ft {
     transition: all 0.3s ease;
     cursor: pointer;
@@ -181,4 +182,96 @@
 
 .ep:hover iframe {
     filter: brightness(1.1);
+}
+
+#host {
+    background-color: rgba(26, 11, 46, 1);
+}
+
+/* ===== Mobile Menu Toggle (Pure CSS) ===== */
+#menu-toggle:checked~.menu {
+    display: block;
+}
+
+#menu-toggle:checked~label i::before {
+    content: '\f00d';
+}
+
+.menu {
+    display: none;
+}
+
+/* ===== Smooth Scroll Behavior ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #6d28d9, #ec4899);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5b21b6, #db2777);
+}
+
+/* ===== Focus States for Accessibility ===== */
+button:focus,
+a:focus {
+    outline: 2px solid #6d28d9;
+    outline-offset: 2px;
+}
+
+/* ===== Media Queries for Mobile ===== */
+@media (max-width: 640px) {
+    .podcast-circle .new-badge {
+        top: -5px;
+        right: -5px;
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .feature-card {
+        padding: 6px !important;
+    }
+
+    .episode-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ===== Text Gradients ===== */
+.gradient-text {
+    background: linear-gradient(135deg, #fbbf24 0%, #ec4899 50%, #c026d3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== Button Glow Effect ===== */
+.gradient-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #fbbf24 0%, #ec4899 50%, #c026d3 100%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.gradient-btn:hover::before {
+    opacity: 0.2;
 }

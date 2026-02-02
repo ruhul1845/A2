@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave - Podcast Website</title>
 
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gray-50">
 
-
+    <!-- Navbar -->
     <nav class="nav shadow-2xl sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-
+                <!-- Logo -->
                 <div class="flex-shrink-0">
                     <h1 class="text-4xl font-bold"><span class="text-white">Tech</span><span
                             class="wave font-bold">Wave</span></h1>
                 </div>
 
-
+                <!-- Desktop Menu (Center) -->
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="#about"
                         class="text-white hover:text-yellow-300 font-medium transition duration-300">About</a>
@@ -37,14 +33,14 @@
                         class="text-white hover:text-yellow-300 font-medium transition duration-300">Host</a>
                 </div>
 
-
+                <!-- Subscribe Button (Desktop) -->
                 <div class="hidden lg:block">
                     <button class="btn text-white px-6 py-2 rounded-full font-semibold relative overflow-hidden">
                         Subscribe
                     </button>
                 </div>
 
-
+                <!-- Mobile Hamburger (Pure CSS) -->
                 <div class="lg:hidden">
                     <input type="checkbox" id="menu-toggle" class="hidden">
                     <label for="menu-toggle" class="cursor-pointer">
@@ -53,7 +49,7 @@
                 </div>
             </div>
 
-
+            <!-- Mobile Menu (Pure CSS Toggle) -->
             <div class="menu lg:hidden pb-4">
                 <a href="#about" class="block py-2 text-white hover:text-yellow-300 font-medium">About</a>
                 <a href="#episodes" class="block py-2 text-white hover:text-yellow-300 font-medium">Episodes</a>
@@ -64,7 +60,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Banner Section -->
     <section id="home" class="ban py-20 lg:py-32"
@@ -100,9 +95,11 @@
             </div>
         </div>
     </section>
+
     <!-- About Section (Statistics) -->
     <section id="about" class="py-16 lg:py-24" style="background-color: rgba(26, 11, 46, 1);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <!-- About The Podcast Section -->
             <section class="py-0 lg:py-0">
                 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -120,8 +117,10 @@
                     </p>
                 </div>
             </section>
+
             <hr
                 style="border: none; height: 1px; background-color: rgba(255, 255, 255, 0.2); width: 80%; margin: 3rem auto;">
+
             <!-- Statistics Grid -->
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-12">
                 <!-- Stat 1 -->
@@ -148,7 +147,6 @@
                     <p class="text-gray-300 font-medium uppercase tracking-wide">Industry Experts</p>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="why-choose-section">
@@ -227,7 +225,7 @@
     <!-- Featured Episodes Section -->
     <section id="episodes" class="py-16 lg:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Heading -->
+
             <div class="text-center mb-12">
                 <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Featured Episodes</h2>
 
@@ -308,6 +306,106 @@
             </div>
         </div>
     </section>
+
+    <!-- Host Section -->
+    <section id="host" class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-2">Meet the Host</h2>
+            </div>
+
+            <!-- Host Card -->
+            <div class="flex flex-col lg:flex-row items-center gap-12  lg:p-12 rounded-2xl shadow-lg" style="
+                background-color: rgb(37,13,68,1);">
+                <!-- Host Image -->
+                <div class="flex-shrink-0">
+                    <div
+                        class="w-64 h-64 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-2xl">
+                        <img src="./assets/host.png" alt="Host Image" class="w-full h-full rounded-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Host Info -->
+                <div class="flex-1 text-center lg:text-left">
+                    <h3 class="text-3xl font-bold text-white mb-2">Alex Kumar</h3>
+                    <p class="text-white font-thin mb-4">
+                        Alex Kumar is a seasoned tech journalist and entrepreneur with over 15 years of experience in
+                        the technology industry.
+                        With a passion for innovation and storytelling, Alex brings complex tech topics to life through
+                        engaging conversations
+                        with industry leaders, innovators, and visionaries. His mission is to make technology accessible
+                        and exciting for everyone.
+                    </p>
+
+                    <!-- Social Media Icons -->
+                    <div class="flex gap-4 justify-center lg:justify-start">
+                        <a href="#"
+                            class="w-12 h-12 border border-white/10 rounded-full flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/50 transition">
+                            <img src="./assets/linkedin.png" alt="LinkedIn" class="w-6 h-6">
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 border border-white/10 rounded-full flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/50 transition">
+                            <img src="./assets/x.png" alt="X" class="w-6 h-6">
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 border border-white/10 rounded-full flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/50 transition">
+                            <img src="./assets/instagram.png" alt="Instagram" class="w-6 h-6">
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 border border-white/10 rounded-full flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/50 transition">
+                            <img src="./assets/youtube.png" alt="YouTube" class="w-6 h-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="text-white py-12"
+        style="background-image: url('./assets/footer-bg.png'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+
+                <div class="flex-shrink-0 mb-12">
+                    <h1 class="text-4xl font-bold">
+                        <span class="text-white">Tech</span><span class="wave font-bold">Wave</span>
+
+                    </h1>
+                </div>
+
+                <!-- Platform Links -->
+                <div class="flex justify-center gap-16 mb- -12">
+                    <a href="#" class="flex items-center gap-2 transition hover:opacity-80">
+                        <img src="./assets/spotify.png" alt="Spotify" class="w-5 h-5">
+                        <span class="text-sm text-gray-400">Spotify</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 transition hover:opacity-80">
+                        <img src="./assets/apple-podcast.png" alt="Apple Podcast" class="w-5 h-5">
+                        <span class="text-sm text-gray-400">Apple Podcasts</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 transition hover:opacity-80">
+                        <img src="./assets/youtube-podcast.png" alt="YouTube" class="w-5 h-5">
+                        <span class="text-sm text-gray-400">YouTube</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 transition hover:opacity-80">
+                        <img src="./assets/twitter.png" alt="Twitter" class="w-5 h-5">
+                        <span class="text-sm text-gray-400">Twitter</span>
+                    </a>
+                </div>
+
+                <!-- Copyright -->
+                <div class=" pt-6">
+                    <p class="text-gray-500 text-sm">
+                        &copy; 2026 TechWave. All rights reserved.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
